@@ -11,49 +11,67 @@ import java.time.Instant;
  *
  * @author Abhi
  */
-public class User {
+public class Address {
     
-    private int userId;    
-    private String userName;
-    private String password;
-    private boolean active;
+    private int addressId;  
+    private City city;   
+    private String address;   
+    private String address2;   
+    private String postalCode;   
+    private String phone;   
     private String createdBy;
     private Instant createdDate;
     private String lastUpdatedBy;
     private Instant lastUpdate;
 
-    public int getUserId() {
-        return userId;
+    public int getAddressId() {
+        return addressId;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setAddressId(int addressId) {
+        this.addressId = addressId;
     }
 
-    public String getUserName() {
-        return userName;
+    public City getCity() {
+        return city;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setCity(City city) {
+        this.city = city;
     }
 
-    public String getPassword() {
-        return password;
+    public String getAddress() {
+        return address;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public boolean isActive() {
-        return active;
+    public String getAddress2() {
+        return address2;
     }
 
-    public void setActive(boolean active) {
-        this.active = active;
+    public void setAddress2(String address2) {
+        this.address2 = address2;
     }
 
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+       
     public String getCreatedBy() {
         return createdBy;
     }

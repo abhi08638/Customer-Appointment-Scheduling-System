@@ -11,47 +11,38 @@ import java.time.Instant;
  *
  * @author Abhi
  */
-public class User {
+public class City {
     
-    private int userId;    
-    private String userName;
-    private String password;
-    private boolean active;
+    private int cityId;  
+    private Country country;   
+    private String city;   
     private String createdBy;
     private Instant createdDate;
     private String lastUpdatedBy;
     private Instant lastUpdate;
-
-    public int getUserId() {
-        return userId;
+    
+    public int getCityId() {
+        return cityId;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 
-    public String getUserName() {
-        return userName;
+    public Country getCountry() {
+        return country;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setCountry(Country country) {
+        this.country = country;
     }
 
-    public String getPassword() {
-        return password;
+    public String getCity() {
+        return city;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getCreatedBy() {

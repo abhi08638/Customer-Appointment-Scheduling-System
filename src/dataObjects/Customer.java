@@ -11,39 +11,39 @@ import java.time.Instant;
  *
  * @author Abhi
  */
-public class User {
+public class Customer {
     
-    private int userId;    
-    private String userName;
-    private String password;
-    private boolean active;
+    private int customerId;  
+    private Address address;   
+    private String customerName;   
+    private boolean active;      
     private String createdBy;
     private Instant createdDate;
     private String lastUpdatedBy;
     private Instant lastUpdate;
 
-    public int getUserId() {
-        return userId;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
-    public String getUserName() {
-        return userName;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
-    public String getPassword() {
-        return password;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public boolean isActive() {
@@ -53,7 +53,7 @@ public class User {
     public void setActive(boolean active) {
         this.active = active;
     }
-
+   
     public String getCreatedBy() {
         return createdBy;
     }
@@ -85,4 +85,11 @@ public class User {
     public void setLastUpdate(Instant lastUpdate) {
         this.lastUpdate = lastUpdate;
     }    
+    
+    //overriding the tostring method allows the combo box 
+    //on the appointment screen to display the customer
+    //name as the value and keep the object as the key.
+    public String toString(){
+        return this.customerName;
+    }
 }
