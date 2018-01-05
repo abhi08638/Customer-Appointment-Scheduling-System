@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+        <Label fx:id="header" focusTraversable="false" layoutY="-3.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="1041.0" styleClass="header" text="Header">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="260.0" layoutX="14.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+        <Button fx:id="addCustomerBtn" layoutX="369.0" layoutY="296.0" mnemonicParsing="false" onAction="#doAddCustomer" prefHeight="25.0" prefWidth="60.0" text="Add" />
+        <Button layoutX="443.0" layoutY="296.0" mnemonicParsing="false" onAction="#doModifyCustomer" prefHeight="25.0" prefWidth="60.0" text="Modify" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="260.0" layoutX="520.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+        <Button layoutX="949.0" layoutY="296.0" mnemonicParsing="false" onAction="#doAppointmentDelete" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+        <Button layoutX="873.0" layoutY="296.0" mnemonicParsing="false" onAction="#doModifyAppointment" prefHeight="25.0" prefWidth="60.0" text="Modify" />
+        <Button fx:id="addAppointmentBtn" layoutX="796.0" layoutY="296.0" mnemonicParsing="false" onAction="#doAddAppointment" prefHeight="25.0" prefWidth="60.0" text="Add" />
+        <TableView fx:id="customerTable" layoutX="23.0" layoutY="122.0" prefHeight="166.0" prefWidth="480.0">
+            <columns>
+                <TableColumn fx:id="customerName" editable="false" prefWidth="322.0" resizable="false" text="Customer Name" />
+                <TableColumn fx:id="customerActive" editable="false" prefWidth="156.0" resizable="false" text="Is Active" />
+            </columns>
+        </TableView>
+        <TableView fx:id="appointmentTable" layoutX="529.0" layoutY="122.0" prefHeight="166.0" prefWidth="480.0">
+            <columns>
+                <TableColumn fx:id="appDate" editable="false" prefWidth="119.0" resizable="false" text="Appt. Date" />    
+                <TableColumn fx:id="appCustomer" editable="false" prefWidth="171.0" resizable="false" text="Customer" />    
+                <TableColumn fx:id="appStart" editable="false" prefWidth="96.0" resizable="false" text="Start Time" />    
+                <TableColumn fx:id="appEnd" editable="false" prefWidth="91.0" resizable="false" text="End Time" />                
+            </columns>
+        </TableView>
+        <TextField fx:id="customerSearchbox" layoutX="354.0" layoutY="84.0" />
+        <TextField fx:id="appSearchBox" layoutX="860.0" layoutY="84.0" />
+        <Button layoutX="296.0" layoutY="84.0" mnemonicParsing="false" onAction="#doCustomerSearch" text="Search" />
+        <Button layoutX="800.0" layoutY="84.0" mnemonicParsing="false" onAction="#doAppointmentSearch" text="Search" />
+        <Label fx:id="customerTableLabel" layoutX="23.0" layoutY="88.0" scaleShape="false" style="-fx-font-weight: normal;">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="appTableLabel" layoutX="529.0" layoutY="88.0" style="-fx-font-weight: normal;">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitBtn" layoutX="952.0" layoutY="351.0" mnemonicParsing="false" onAction="#doExit" prefHeight="25.0" prefWidth="60.0" text="Exit" />
+      <RadioButton fx:id="weekly" layoutX="641.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleRadioButtonAction" />
+      <RadioButton fx:id="monthly" layoutX="529.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleRadioButtonAction" />
+      <Button layoutX="14.0" layoutY="351.0" mnemonicParsing="false" onAction="#doConsultationReport" prefHeight="25.0" prefWidth="130.0" text="Consultant Report" />
+      <Button layoutX="154.0" layoutY="351.0" mnemonicParsing="false" onAction="#doTypeReport" prefHeight="25.0" prefWidth="110.0" text="Type Report" />
+      <Button layoutX="274.0" layoutY="351.0" mnemonicParsing="false" onAction="#doCustomerAppointmentReport" prefHeight="25.0" prefWidth="200.0" text="Customer Appointment Report" />
+    </children>
+</Pane>
