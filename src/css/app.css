@@ -1,0 +1,121 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+    
+    -fx-background-color:white;
+}
+
+.header {
+    -fx-background-color:rgb(66, 134, 244);
+    -fx-padding:10px;
+    -fx-text-fill:white;    
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.button {
+    -fx-text-fill: white;    
+    -fx-background-color: rgb(66, 134, 244);
+    -fx-font-weight: bold;    
+    -fx-border-radius: 10;
+    -fx-border-width: 10;
+}
+
+.button:hover {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:pressed {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.2) , 5, 0.0 , 0 , 1 );
+}
+
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -2 1 -2;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , rgb(66, 134, 244) , white;
+    -fx-background-insets: 0 -1 0 -1, 0 0 0 0, 0 -2 1 -2;
+}
+
+.dialog-pane:header .header-panel{
+    -fx-padding:10px;    
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.3) , 5, 0.0 , 0 , 1 );
+}
+
+.dialog-pane:header .header-panel .label{
+    -fx-text-fill:white;    
+    -fx-font-size:18pt;
+}
+
+.errorAlert:header .header-panel{
+    -fx-background-color:rgb(244, 80, 65);    
+}
+
+.errorAlert:header .button{
+    -fx-background-color: rgb(244, 80, 65);
+}
+
+.successAlert:header .header-panel{
+    -fx-background-color:rgb(1, 188, 23);
+}
+
+.successAlert:header .button{
+    -fx-background-color:rgb(1, 188, 23);
+}
+
+.infoAlert:header .header-panel{
+    -fx-background-color:rgb(255, 167, 25);
+}
+
+.infoAlert:header .button{
+    -fx-background-color:rgb(255, 167, 25);
+}
+
+.table-view{
+   -fx-background-color: transparent;
+   -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.2) , 5, 0.0 , 0 , 1 );
+   -fx-table-cell-border-color: transparent;
+   -fx-text-fill:black;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: rgb(244, 244, 244);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: rgb(244, 244, 244);
+    -fx-alignment:center-left;
+    -fx-font-weight: normal;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;  
+}
+
+.table-row-cell{
+    -fx-background-color: white;
+    -fx-background-insets: 0.1,0,0,0;
+    -fx-font-weight: 100;
+    -fx-font-size:9pt;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgb(224, 224, 224);
+    -fx-background-insets: 0.4,0,0,0;
+    -fx-table-cell-border-color: transparent;
+    -fx-font-weight: 100;
+    -fx-font-size:9pt;
+}
+
+.table-row-cell:selected .text {
+       -fx-fill: black ;
+}
+
+.combo-box-base {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -2 1 -2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
