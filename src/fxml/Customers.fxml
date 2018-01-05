@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerController">
+   <children>
+      <Label fx:id="header" focusTraversable="false" layoutY="-3.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="670.0" styleClass="header" text="Header">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="activeCB" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="554.0" layoutY="24.0" mnemonicParsing="false" style="-fx-text-fill: white; -fx-font-weight: bold;" text="CheckBox" />
+      <Label fx:id="nameLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="81.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="nameText" layoutX="134.0" layoutY="76.0" prefHeight="39.0" prefWidth="449.0" />
+      <Label fx:id="addr1Label" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="125.0" prefHeight="27.0" prefWidth="120.0" text="Label" />      
+      <TextField fx:id="addr1Text" layoutX="134.0" layoutY="120.0" prefHeight="39.0" prefWidth="449.0" />
+      <Label fx:id="addr2Label" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="169.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="addr2Text" layoutX="134.0" layoutY="164.0" prefHeight="39.0" prefWidth="449.0" />
+      <Label fx:id="cityLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="213.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="cityText" layoutX="134.0" layoutY="208.0" prefHeight="39.0" prefWidth="150.0" />
+      <Label fx:id="countryLabel" alignment="CENTER_RIGHT" layoutX="302.0" layoutY="213.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="countryText" layoutX="433.0" layoutY="208.0" prefHeight="39.0" prefWidth="150.0" /> 
+      <Label fx:id="zipLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="257.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="zipText" layoutX="134.0" layoutY="252.0" prefHeight="39.0" prefWidth="150.0" />           
+      <Label fx:id="phoneLabel" alignment="CENTER_RIGHT" layoutX="302.0" layoutY="257.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="phoneText" layoutX="433.0" layoutY="252.0" prefHeight="39.0" prefWidth="150.0" />      
+      <Button fx:id="saveBtn" layoutX="165.0" layoutY="336.0" mnemonicParsing="false" onAction="#doSave" prefHeight="30.0" prefWidth="150.0" text="Button" />           
+      <Button fx:id="cancelBtn" layoutX="367.0" layoutY="336.0" mnemonicParsing="false" onAction="#doCancel" prefHeight="30.0" prefWidth="150.0" text="Button" />  
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="218.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <Label fx:id="userNameLabel" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="76.0" prefHeight="27.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="115.0" prefHeight="27.0" prefWidth="150.0" text="Label" />
+      <TextField fx:id="userNameText" layoutX="184.0" layoutY="76.0" prefWidth="150.0" />
+      <TextField fx:id="passwordText" layoutX="184.0" layoutY="115.0" prefWidth="150.0" />
+      <Button fx:id="loginBtn" layoutX="184.0" layoutY="165.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="30.0" prefWidth="150.0" text="Button" />
+      <Label fx:id="header" focusTraversable="false" layoutY="-3.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="428.0" styleClass="header" text="Header">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

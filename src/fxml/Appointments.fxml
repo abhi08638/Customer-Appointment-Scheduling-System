@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppointmentController">
+   <children>
+      <Label fx:id="header" focusTraversable="false" layoutY="-3.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="670.0" styleClass="header" text="Header">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="81.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="titleText" layoutX="134.0" layoutY="76.0" prefHeight="39.0" prefWidth="449.0" />
+      <Label fx:id="contactLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="125.0" prefHeight="27.0" prefWidth="120.0" text="Label" />      
+      <TextField fx:id="contactText" layoutX="134.0" layoutY="120.0" prefHeight="39.0" prefWidth="449.0" />
+      <Label fx:id="locationLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="169.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="locationText" layoutX="134.0" layoutY="164.0" prefHeight="39.0" prefWidth="449.0" /> 
+      <TextField fx:id="urlText" layoutX="134.0" layoutY="208.0" prefHeight="39.0" prefWidth="449.0" />
+      <Label fx:id="urlLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="213.0" prefHeight="27.0" prefWidth="120.0" text="URL" />
+      <ComboBox fx:id="customerDD" layoutX="134.0" layoutY="252.0" prefHeight="39.0" prefWidth="449.0" />
+      <Label fx:id="customerLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="257.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <ComboBox fx:id="typeDD" layoutX="134.0" layoutY="296.0" prefHeight="39.0" prefWidth="150.0" />
+      <Label fx:id="typeLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="301.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="appointmentDateText" layoutX="433.0" layoutY="296.0" prefHeight="39.0" prefWidth="150.0" />
+      <Label fx:id="appointmentDateLabel" alignment="CENTER_RIGHT" layoutX="302.0" layoutY="301.0" prefHeight="27.0" prefWidth="120.0" text="Label" />  
+      <Label fx:id="startTimeLabel" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="345.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="startTimeText" layoutX="134.0" layoutY="340.0" prefHeight="39.0" prefWidth="150.0" />           
+      <Label fx:id="endTimeLabel" alignment="CENTER_RIGHT" layoutX="302.0" layoutY="345.0" prefHeight="27.0" prefWidth="120.0" text="Label" />
+      <TextField fx:id="endTimeText" layoutX="433.0" layoutY="340.0" prefHeight="39.0" prefWidth="150.0" />      
+      <Button fx:id="saveBtn" layoutX="165.0" layoutY="406.0" mnemonicParsing="false" onAction="#doSave" prefHeight="30.0" prefWidth="150.0" text="Button" />           
+      <Button fx:id="cancelBtn" layoutX="367.0" layoutY="406.0" mnemonicParsing="false" onAction="#doCancel" prefHeight="30.0" prefWidth="150.0" text="Button" />                  
+   </children>
+</AnchorPane>
